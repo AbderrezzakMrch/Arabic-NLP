@@ -1,0 +1,584 @@
+[
+    {
+        "ID": 0,
+        "Word": "احتفظ",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 1,
+        "Word": "بنفيكا",
+        "Apperance": 3,
+        "Frequency": 0.02127659574468085
+    },
+    {
+        "ID": 2,
+        "Word": "بمركز",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 3,
+        "Word": "الصدارة",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 4,
+        "Word": "فوزه",
+        "Apperance": 2,
+        "Frequency": 0.014184397163120567
+    },
+    {
+        "ID": 5,
+        "Word": "مضيفه",
+        "Apperance": 3,
+        "Frequency": 0.02127659574468085
+    },
+    {
+        "ID": 6,
+        "Word": "ناسيونال",
+        "Apperance": 2,
+        "Frequency": 0.014184397163120567
+    },
+    {
+        "ID": 7,
+        "Word": "ماديرا",
+        "Apperance": 2,
+        "Frequency": 0.014184397163120567
+    },
+    {
+        "ID": 8,
+        "Word": "المرحلة",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 9,
+        "Word": "العاشرة",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 10,
+        "Word": "بطولة",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 11,
+        "Word": "البرتغال",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 12,
+        "Word": "لكرة",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 13,
+        "Word": "القدم",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 14,
+        "Word": "وسجل",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 15,
+        "Word": "لاعب",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 16,
+        "Word": "الوسط",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 17,
+        "Word": "الأرجنتيني",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 18,
+        "Word": "ادواردو",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 19,
+        "Word": "سلافيو",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 20,
+        "Word": "والمهاجم",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 21,
+        "Word": "البرازيلي",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 22,
+        "Word": "يوناس",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 23,
+        "Word": "جونالفيز",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 24,
+        "Word": "أوليفيرا",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 25,
+        "Word": "هدفي",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 26,
+        "Word": "وادغار",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 27,
+        "Word": "ابرو",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 28,
+        "Word": "هدف",
+        "Apperance": 3,
+        "Frequency": 0.02127659574468085
+    },
+    {
+        "ID": 29,
+        "Word": "رفع",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 30,
+        "Word": "رصيده",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 31,
+        "Word": "نقطة",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 32,
+        "Word": "يبتعد",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 33,
+        "Word": "بفارق",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 34,
+        "Word": "نقاط",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 35,
+        "Word": "منافسه",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 36,
+        "Word": "التقليدي",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 37,
+        "Word": "بورتو",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 38,
+        "Word": "تراجع",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 39,
+        "Word": "المركز",
+        "Apperance": 2,
+        "Frequency": 0.014184397163120567
+    },
+    {
+        "ID": 40,
+        "Word": "الثاني",
+        "Apperance": 2,
+        "Frequency": 0.014184397163120567
+    },
+    {
+        "ID": 41,
+        "Word": "الثالث",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 42,
+        "Word": "إثر",
+        "Apperance": 2,
+        "Frequency": 0.014184397163120567
+    },
+    {
+        "ID": 43,
+        "Word": "سقوطه",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 44,
+        "Word": "فخ",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 45,
+        "Word": "التعادل",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 46,
+        "Word": "استوريل",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 47,
+        "Word": "بهدفين",
+        "Apperance": 3,
+        "Frequency": 0.02127659574468085
+    },
+    {
+        "ID": 48,
+        "Word": "للجزائري",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 49,
+        "Word": "ياسين",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 50,
+        "Word": "ابراهيمي",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 51,
+        "Word": "الإسباني",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 52,
+        "Word": "اوليفر",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 53,
+        "Word": "توريس",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 54,
+        "Word": "مقابل",
+        "Apperance": 3,
+        "Frequency": 0.02127659574468085
+    },
+    {
+        "ID": 55,
+        "Word": "هدفين",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 56,
+        "Word": "لكوكا",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 57,
+        "Word": "وانطونيو",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 58,
+        "Word": "خوسي",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 59,
+        "Word": "كارليو",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 60,
+        "Word": "ركلة",
+        "Apperance": 2,
+        "Frequency": 0.014184397163120567
+    },
+    {
+        "ID": 61,
+        "Word": "وتقدم",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 62,
+        "Word": "فيتوريا",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 63,
+        "Word": "غيمارايش",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 64,
+        "Word": "أروكا",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 65,
+        "Word": "لجوزيه",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 66,
+        "Word": "وهرناني",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 67,
+        "Word": "لدييغو",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 68,
+        "Word": "باقي",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 69,
+        "Word": "المباريات",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 70,
+        "Word": "فاز",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 71,
+        "Word": "سبورتينغ",
+        "Apperance": 2,
+        "Frequency": 0.014184397163120567
+    },
+    {
+        "ID": 72,
+        "Word": "براغا",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 73,
+        "Word": "جيل",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 74,
+        "Word": "فيسنتي",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 75,
+        "Word": "لباردو",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 76,
+        "Word": "وسانتوس",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 77,
+        "Word": "وبوافيستا",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 78,
+        "Word": "بينافيل",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 79,
+        "Word": "بهدف",
+        "Apperance": 4,
+        "Frequency": 0.028368794326241134
+    },
+    {
+        "ID": 80,
+        "Word": "لسانتوس",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 81,
+        "Word": "وفيتوريا",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 82,
+        "Word": "سيتوبال",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 83,
+        "Word": "ماريتيمو",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 84,
+        "Word": "فونشال",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 85,
+        "Word": "لروزا",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 86,
+        "Word": "وخسر",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 87,
+        "Word": "موريننزي",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 88,
+        "Word": "امام",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 89,
+        "Word": "بيليننسيش",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 90,
+        "Word": "لسيلفا",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 91,
+        "Word": "وتعادل",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 92,
+        "Word": "لشبونة",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 93,
+        "Word": "باكوش",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 94,
+        "Word": "فيريرا",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 95,
+        "Word": "لمونتيرو",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    },
+    {
+        "ID": 96,
+        "Word": "لهورتادو",
+        "Apperance": 1,
+        "Frequency": 0.0070921985815602835
+    }
+]
