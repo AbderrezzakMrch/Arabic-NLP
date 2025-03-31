@@ -2,6 +2,8 @@ import json
 import re
 from pypdf import PdfReader  # PyPDF2
 
+
+
 # Read the stop words file
 def read_stop_words(file_path):
     with open(file_path, "r", encoding="utf-8") as file:
@@ -61,7 +63,7 @@ def main():
     stop_words = read_stop_words("stop_arabic.txt")
 
     # Read text from a PDF file
-    corpus = read_pdf("مطبوعة-تاريخ-الجزائر-الحديث-ثانية-تاريخ-د.دوريش-الشافعي.pdf")  # Replace with your PDF file path
+    corpus = read_pdf("المقاومات الشعبية في الجزائر وتونس دراسة تاريخية مقارنة.pdf")  # Replace with your PDF file path
 
     # Tokenize the text
     tokens = tokenize(corpus)
@@ -97,3 +99,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
