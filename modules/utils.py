@@ -1,11 +1,10 @@
 # modules/utils.py
 import json
 
-
 def save_in_json(data, output_file):
     """
     Save data to a JSON file.
-
+    
     :param data: Data to save.
     :param output_file: Path to the output JSON file.
     """
