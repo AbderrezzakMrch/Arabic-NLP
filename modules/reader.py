@@ -5,6 +5,7 @@ from pypdf import PdfReader
 
 class PDFReader:
     def read_pdfs_from_directory(self, directory_path, output_file):
+
         corpus = ""
         for filename in os.listdir(directory_path):
             if filename.endswith(".pdf"):
@@ -12,7 +13,6 @@ class PDFReader:
                 print(f"Reading {filename}...")
                 text = self.read_pdf(file_path)
                 cleaned_text = self.clean_text(text)
-                new_text = self.extract_arabic_words(cleaned_text)
                 corpus += cleaned_text + "\n"  # Separate PDFs with newlines
 
         # Save the cleaned corpus to a file
@@ -20,6 +20,7 @@ class PDFReader:
             file.write(corpus)
 
         print(f"Corpus saved to {output_file}")
+
         return corpus
 
     def read_pdf(self, file_path):
@@ -33,11 +34,6 @@ class PDFReader:
         # Remove extra spaces
         text = re.sub(r'\s+', ' ', text).strip()
         return text
-
-    def extract_arabic_words(self, text):
-        # This regex matches Arabic words only
-        arabic_words = re.findall(r'[\u0600-\u06FF]+', text)
-        return arabic_words
 
     def read_stop_words(self, file_path):
         with open(file_path, "r", encoding="utf-8") as file:
