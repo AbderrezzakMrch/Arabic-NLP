@@ -27,8 +27,8 @@ class ArabicNLPPipeline:
         self.load_or_create_corpus()
         self.tokenize_text()
         self.analyze_vocabulary()
-        self.process_phrases()
         self.display_statistics()
+        self.process_phrases()
 
     def load_stop_words(self):
         """Load stop words from file"""
@@ -67,10 +67,6 @@ class ArabicNLPPipeline:
         self.utils.save_in_json(word_frequence_0, self.config["word_freq_0_file"])
         self.utils.save_in_json(word_frequence_1, self.config["word_freq_1_file"])
 
-    def process_phrases(self):
-       """Process corpus into phrases"""
-       self.processor.process_text_file(self.corpus, self.config["phrases_file"])
-
     def display_statistics(self):
         """Display pipeline statistics"""
         print("Total Tokens (Vocabulary 0):", len(self.all_tokens))
@@ -78,3 +74,9 @@ class ArabicNLPPipeline:
         print("Total Tokens (Vocabulary 1):", len(self.filtered_tokens))
         print("Unique Words (Vocabulary 1):", len(set(self.filtered_tokens)))
         print("Pipeline completed!")
+
+
+    def process_phrases(self):
+        """Process corpus into phrases and return them"""
+        phrases = self.processor.process_text_file(self.corpus, self.config["phrases_file"])
+        print("phrases:", len(phrases))

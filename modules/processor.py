@@ -62,5 +62,5 @@ class TextProcessor:
         cleaned_phrases = self.clean_phrases(phrases)  # Step 2: Clean each phrase
 
         self.utils.save_in_json(cleaned_phrases, output_json)
-        print(f"Phrases saved to {output_json}")
+        #print(f"Phrases saved to {output_json}")
         return cleaned_phrases
