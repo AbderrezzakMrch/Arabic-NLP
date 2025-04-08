@@ -1,6 +1,6 @@
 import os
 from .reader import PDFReader
-#from .processor import TextProcessor
+from .processor import TextProcessor
 from .tokenizer import ArabicTokenizer
 from .analyzer import FrequencyAnalyzer
 from .utils import JSONUtils
@@ -10,7 +10,7 @@ class ArabicNLPPipeline:
     def __init__(self, config):
         self.config = config
         self.reader = PDFReader()
-        #self.processor = TextProcessor()
+        self.processor = TextProcessor()
         self.tokenizer = ArabicTokenizer()
         self.analyzer = FrequencyAnalyzer()
         self.utils = JSONUtils()
@@ -27,7 +27,7 @@ class ArabicNLPPipeline:
         self.load_or_create_corpus()
         self.tokenize_text()
         self.analyze_vocabulary()
-        #self.process_phrases()
+        self.process_phrases()
         self.display_statistics()
 
     def load_stop_words(self):
@@ -67,9 +67,9 @@ class ArabicNLPPipeline:
         self.utils.save_in_json(word_frequence_0, self.config["word_freq_0_file"])
         self.utils.save_in_json(word_frequence_1, self.config["word_freq_1_file"])
 
-    #def process_phrases(self):
-    #   """Process corpus into phrases"""
-    #   self.processor.process_text_file(self.corpus, self.config["phrases_file"])
+    def process_phrases(self):
+       """Process corpus into phrases"""
+       self.processor.process_text_file(self.corpus, self.config["phrases_file"])
 
     def display_statistics(self):
         """Display pipeline statistics"""
