@@ -1,8 +1,6 @@
 
 import nltk
 from nltk.stem.isri import ISRIStemmer
-from farasa.segmenter import FarasaSegmenter
-from farasa.ner import FarasaNamedEntityRecognizer
 
 
 
@@ -11,9 +9,6 @@ class VocabularyChecker:
     def __init__(self):
         # Initialize processing tools
         self.nltk_stemmer = ISRIStemmer()
-        #self.farasa_segmenter = FarasaSegmenter()
-        #self.farasa_ner = FarasaNamedEntityRecognizer()
-
         self.nlp = stanza.Pipeline('ar', processors='tokenize,mwt,pos,lemma,ner')
 
     def is_stop_word(self, word,stopwords):
@@ -55,21 +50,6 @@ class VocabularyChecker:
         except Exception as e:
             print(f"Lemmatization error for '{word}': {str(e)}")
             return False
-    '''
-    def is_named_entity(self, word):
-        """Check if word is a named entity"""
-        try:
-            ner_result = self.farasa_ner.recognize(word)
-            if '/' in ner_result:
-                _, entity_tag = ner_result.split('/')
-                if(entity_tag not in ('O', 'UNK')):
-                    print(f"✅ Accepted: {word} (NER tag: {entity_tag})")
-                return entity_tag not in ('O', 'UNK')
-            return False
-        except Exception:
-            return False
-        '''
-
 
     def is_named_entity(self, word):
         """Check if word is a named entity"""

@@ -3,33 +3,48 @@ import re
 
 class ArabicTokenizer:
     def __init__(self):
-        # Arabic Unicode ranges + basic punctuation
-        self.arabic_pattern = re.compile(
-            r'[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF]+'
+        # Regex to remove Arabic numerals (٠١٢٣٤٥٦٧٨٩)
+        self.arabic_numerals = re.compile(r'[\u0660-\u0669\u06F0-\u06F9]')
+
+        # Regex to remove Arabic punctuation: ، ؛ ؟ « »
+        self.arabic_punctuation = re.compile(r'[\u060C\u061B\u061F\u00AB\u00BB]')
+
+        # Regex to remove Tashkeel (Arabic diacritics/vowel marks)
+        self.tashkeel = re.compile(r'[\u064B-\u065F\u0610-\u061A\u0670]')
+
+        # Regex for pure Arabic words (2+ letters)
+        self.arabic_only = re.compile(
+            r'^[^\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]*'  # Remove leading non-Arabic
+            r'([\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]{2,})'  # Keep Arabic core
+            r'[^\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]*$'  # Remove trailing non-Arabic
         )
 
-    def is_arabic(self, word):
-        """Check if word is valid Arabic (2+ letters)"""
-        return (len(word) >= 2 and
-                bool(re.fullmatch(r'^[\u0600-\u06FF]+$', word)))
-
     def clean_token(self, token):
-        """Remove ALL non-Arabic characters from a token"""
-        # Find all Arabic letter sequences in the token
-        arabic_parts = self.arabic_pattern.findall(token)
-        # Return the longest Arabic part (if any)
-        return max(arabic_parts, key=len) if arabic_parts else ""
+        """Remove numerals, punctuation, tashkeel, and extract pure Arabic words"""
+        # Step 1: Remove Arabic numerals
+        token = self.arabic_numerals.sub('', token)
+        # Step 2: Remove Arabic punctuation
+        token = self.arabic_punctuation.sub('', token)
+        # Step 3: Remove Tashkeel (diacritics)
+        token = self.tashkeel.sub('', token)
+        # Step 4: Extract pure Arabic words (2+ letters)
+        match = self.arabic_only.search(token)
+        return match.group(1) if match else ""
+
+    def normalize_arabic(self, text):
+        """Normalize Arabic text and handle concatenated words"""
+        # Normalize characters first
+        text = re.sub(r'[ًٌٍَُِّْـ]', '', text)  # Remove diacritics
+        text = re.sub(r'[إأآا]', 'ا', text)  # Normalize Alif
+        text = re.sub(r'ى', 'ي', text)  # Normalize Alef Maqsura
+        text = re.sub(r'ؤ', 'و', text)  # Normalize Waw with Hamza
+        text = re.sub(r'ئ', 'ي', text)  # Normalize Yeh with Hamza
+        text = re.sub(r'ة', 'ه', text)  # Normalize Teh Marbuta
+        return text
 
     def tokenize(self, text):
-        """Manual tokenization by splitting on whitespace"""
-        # 1. Split on any whitespace
-        raw_tokens = re.split(r'\s+', text.strip())
-
-        # 2. Clean each token
-        tokens = []
-        for token in raw_tokens:
-            cleaned = self.clean_token(token)
-            if self.is_arabic(cleaned):
-                tokens.append(cleaned)
-
-        return tokens
+        """Get clean Arabic tokens (no numbers, punctuation, or tashkeel)"""
+        return [
+            self.clean_token(word) for word in text.split()
+            if self.clean_token(word)
+        ]

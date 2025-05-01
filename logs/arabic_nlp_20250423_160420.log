@@ -1,0 +1,23 @@
+2025-04-23 16:04:20,028 - __main__ - INFO - Starting Arabic NLP Pipeline
+2025-04-23 16:04:20,029 - stanza - INFO - Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+2025-04-23 16:04:20,279 - stanza - INFO - Downloaded file to C:\Users\le\stanza_resources\resources.json
+2025-04-23 16:04:20,941 - stanza - INFO - Loading these models for language: ar (Arabic):
+=============================
+| Processor | Package       |
+-----------------------------
+| tokenize  | padt          |
+| mwt       | padt          |
+| pos       | padt_charlm   |
+| lemma     | padt_nocharlm |
+| ner       | aqmar_charlm  |
+=============================
+
+2025-04-23 16:04:20,943 - stanza - INFO - Using device: cpu
+2025-04-23 16:04:20,943 - stanza - INFO - Loading: tokenize
+2025-04-23 16:04:20,950 - stanza - INFO - Loading: mwt
+2025-04-23 16:04:21,052 - stanza - INFO - Loading: pos
+2025-04-23 16:04:23,520 - stanza - INFO - Loading: lemma
+2025-04-23 16:04:24,155 - stanza - INFO - Loading: ner
+2025-04-23 16:04:26,563 - stanza - INFO - Done loading processors!
+2025-04-23 16:04:26,983 - modules.pipeline - INFO - Pipeline initialized successfully
+2025-04-23 16:04:26,983 - __main__ - ERROR - Pipeline execution failed: object of type 'NoneType' has no len()
