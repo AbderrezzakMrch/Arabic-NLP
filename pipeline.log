@@ -301,3 +301,30 @@
 2025-04-30 14:20:49,713 - modules.pipeline - INFO - User selected GUI predictor
 2025-04-30 14:20:49,714 - modules.pipeline - INFO - Starting GUI application
 2025-04-30 14:20:50,762 - modules.pipeline - INFO - GUI started successfully
+2025-05-03 18:51:06,006 - __main__ - INFO - Application started
+2025-05-03 18:51:06,007 - __main__ - INFO - Starting Arabic NLP Pipeline
+2025-05-03 18:51:06,007 - modules.pipeline - INFO - Initializing ArabicNLPPipeline components...
+2025-05-03 18:51:06,346 - modules.pipeline - INFO - Pipeline initialized successfully with all components
+2025-05-03 18:51:06,347 - __main__ - INFO - Pipeline execution started
+2025-05-03 18:51:06,347 - modules.pipeline - INFO - Starting main pipeline execution
+2025-05-03 18:51:11,163 - modules.pipeline - INFO - User selected GUI predictor
+2025-05-03 18:51:11,163 - modules.pipeline - INFO - Starting GUI application
+2025-05-03 18:51:12,594 - modules.pipeline - INFO - GUI started successfully
+2025-05-27 07:57:11,349 - __main__ - INFO - Application started
+2025-05-27 07:57:11,350 - __main__ - INFO - Starting Arabic NLP Pipeline
+2025-05-27 07:57:11,350 - modules.pipeline - INFO - Initializing ArabicNLPPipeline components...
+2025-05-27 07:57:11,420 - modules.pipeline - INFO - Pipeline initialized successfully with all components
+2025-05-27 07:57:11,420 - __main__ - INFO - Pipeline execution started
+2025-05-27 07:57:11,420 - modules.pipeline - INFO - Starting main pipeline execution
+2025-05-27 07:57:18,128 - modules.pipeline - INFO - User selected GUI predictor
+2025-05-27 07:57:18,129 - modules.pipeline - INFO - Starting GUI application
+2025-05-27 07:57:18,731 - modules.pipeline - INFO - GUI started successfully
+2025-06-04 22:44:16,470 - __main__ - INFO - Application started
+2025-06-04 22:44:16,470 - __main__ - INFO - Starting Arabic NLP Pipeline
+2025-06-04 22:44:16,470 - modules.pipeline - INFO - Initializing ArabicNLPPipeline components...
+2025-06-04 22:44:16,555 - modules.pipeline - INFO - Pipeline initialized successfully with all components
+2025-06-04 22:44:16,555 - __main__ - INFO - Pipeline execution started
+2025-06-04 22:44:16,555 - modules.pipeline - INFO - Starting main pipeline execution
+2025-06-04 22:44:21,197 - modules.pipeline - INFO - User selected GUI predictor
+2025-06-04 22:44:21,197 - modules.pipeline - INFO - Starting GUI application
+2025-06-04 22:44:22,108 - modules.pipeline - INFO - GUI started successfully
